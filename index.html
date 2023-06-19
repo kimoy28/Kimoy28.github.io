@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="img/exotic-icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Zoo</title>
+  </head>
+  <body>
+    <nav class="Navbar">
+      <div class="nav-item-left">
+        <a href="#"> <h1 class="text-4xl font-black">Zoo</h1></a>
+
+        <ul class="nav-list">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Animals</a></li>
+          <li><a href="#">Donate</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="nav-item-right">
+        <a href="#">
+          <div class="btn-contact font-black text-center">Contact</div>
+        </a>
+      </div>
+      <div class="menu-icon">
+        <span class="hamburger"></span>
+      </div>
+      <ul class="menu">
+        <li class="font-bold"><a href="#">About</a></li>
+        <li class="font-bold"><a href="#">Animals</a></li>
+        <li class="font-bold"><a href="#">Donate</a></li>
+        <li class="font-bold"><a href="#">Pricing</a></li>
+        <li class="font-bold"><a href="#">Blog</a></li>
+        <li class="font-bold"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      const menuIcon = document.querySelector(".menu-icon");
+      const menu = document.querySelector(".menu");
+      const hamburger = document.querySelector(".hamburger");
+      const exit = document.createElement("span");
+      exit.classList.add("exit");
+
+      menuIcon.addEventListener("click", function () {
+        menu.classList.toggle("active");
+        hamburger.classList.toggle("exit");
+        if (menu.classList.contains("active")) {
+          menuIcon.appendChild(exit);
+        } else {
+          menuIcon.removeChild(exit);
+        }
+      });
+    </script>
+    <header class="head">
+      <div class="hero-content">
+        <h2 class="font-bold">Welcome to Zoo</h2>
+        <h1 class="font-black">Care for <br />any animals</h1>
+        <p>
+          Larger than urban and open-range zoos, safari parks are areas where
+          tourists can drive their own cars.
+        </p>
+        <div class="Explore">
+          <a href="#" class="font-black text-center">Explore</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="scroll-animation">
+        <div class="zoo-feat">
+          <h5 class="font-bold text-center">zoo features</h5>
+          <h1 class="font-black text-center">
+            Park where live animals are kept so that people can look at them
+          </h1>
+        </div>
+        <div class="card-container">
+          <div class="card-exotic">
+            <div class="exotic-icon">
+              <img src="img/exotic-icon.png" alt="" />
+            </div>
+            <h1 class="font-black">Exotic</h1>
+            <p>
+              Urban and open-range zoos, safari parks are areas where tourists
+              can drive their own cars to see non-native wildlife.
+            </p>
+          </div>
+          <div class="card-modern">
+            <div class="modern-icon">
+              <img src="img/modern-icon.png" alt="" />
+            </div>
+            <h1 class="font-black">Modern</h1>
+            <p>
+              Safari parks are areas where tourists can drive their own cars to
+              see non-native wildlife living in a large enclosed areas.
+            </p>
+          </div>
+          <div class="card-popular">
+            <div class="popular-icon">
+              <img src="img/popular-icon.png" alt="" />
+            </div>
+            <h1 class="font-black">Popular</h1>
+            <p>
+              Drive their own cars to see non-native wildlife living in large,
+              enclosed areas. These attractions allow animals.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content-habitat">
+        <div class="about">
+          <h2 class="font-bold uppercase">About</h2>
+          <h1 class="font-black capitalize">Natural habitats of animals</h1>
+          <p>
+            See non-native wildlife living in large, enclosed areas. These
+            attractions allow the animals more space.
+          </p>
+          <ul>
+            <li>Larger than urban and open-range zoos</li>
+            <li>Safari parks are areas where tourists</li>
+            <li>Can drive their own cars</li>
+          </ul>
+          <div class="learn-more">
+            <p>Want to know more?</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="live-video">
+        <h2 class="font-bold uppercase">Live Video</h2>
+        <h1 class="font-black capitalize">Watch Live Cam</h1>
+        <p>
+          Attractions allow the animals more space than the small enclosures of
+          traditional zoos.
+        </p>
+      </div>
+      <div class="animal-vid">
+        <div class="leaf">
+          <img src="img/Bitmap-live-video.png" alt="" />
+        </div>
+        <div class="vid-box">
+          <div class="video-container">
+            <video src="your-video-source.mp4" autoplay loop></video>
+          </div>
+          <div class="overlay">
+            <div class="animal-type">
+              <h1>Life Of Animal</h1>
+            </div>
+            <ul>
+              <li>REC</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="animal-card-container">
+          <div class="arrow-up">
+            <div class="arrow-up-icon">
+              <img src="img/arrow-down.png" alt="" />
+            </div>
+          </div>
+
+          <div class="animal-card-wrap">
+            <div class="carousel">
+              <div class="animal-card">
+                <!-- Giraffe content -->
+                <div class="giraffe-icon">
+                  <img src="img/giraffe.png" alt="" />
+                </div>
+                <div class="giraffe-des">
+                  <h1 class="font-black">Giraffe</h1>
+                  <p>Popular zoo animals for kids</p>
+                </div>
+              </div>
+              <div class="animal-card-monkey">
+                <!-- Monkey content -->
+                <div class="monkey-icon">
+                  <img src="img/monkey-icon.png" alt="" />
+                </div>
+                <div class="monkey-des">
+                  <h1 class="font-black">Monkey</h1>
+                  <p>Most commonly seen</p>
+                </div>
+              </div>
+              <div class="animal-card-tiger">
+                <!-- Tiger content -->
+                <div class="tiger-icon">
+                  <img src="img/tiger-icon.png" alt="" />
+                </div>
+                <div class="tiger-des">
+                  <h1 class="font-black">Tiger</h1>
+                  <p>One among the wild</p>
+                </div>
+              </div>
+              <div class="animal-card-elephant">
+                <!-- Elephant content -->
+                <div class="elephant-icon">
+                  <img src="img/elephant-grid-icon.png" alt="" />
+                </div>
+                <div class="elephant-des">
+                  <h1 class="font-black">Elephant</h1>
+                  <p>Largest land mammals on earth</p>
+                </div>
+              </div>
+              <div class="animal-card-rhino">
+                <!-- Elephant content -->
+                <div class="rhino-icon">
+                  <img src="img/rhinoceros-grid-icon.png" alt="" />
+                </div>
+                <div class="rhino-des">
+                  <h1 class="font-black">Rhino</h1>
+                  <p>One of the endagered species.</p>
+                </div>
+              </div>
+
+              <div class="animal-card-deer">
+                <!-- Elephant content -->
+                <div class="deer-icon">
+                  <img src="img/deer-grid-icon.png" alt="" />
+                </div>
+                <div class="deer-des">
+                  <h1 class="font-black">Deer</h1>
+                  <p>They have antlers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="arrow-down">
+            <div class="arrow-down-icon">
+              <img src="img/arrow-down.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- vertical carousel -->
+      <script>
+        const arrowUp = document.querySelector(".arrow-up");
+        const arrowDown = document.querySelector(".arrow-down");
+        const carousel = document.querySelector(".carousel");
+        const cardHeight = 168; // Adjust the height of the cards as needed
+        let currentPosition = 0;
+
+        arrowUp.addEventListener("click", () => {
+          if (currentPosition < 0) {
+            currentPosition += cardHeight;
+            carousel.style.transform = `translateY(${currentPosition}px)`;
+          }
+        });
+
+        arrowDown.addEventListener("click", () => {
+          const maxHeight =
+            carousel.offsetHeight - carousel.parentElement.offsetHeight;
+          if (currentPosition > -maxHeight) {
+            currentPosition -= cardHeight;
+            carousel.style.transform = `translateY(${currentPosition}px)`;
+          }
+        });
+      </script>
+      <!-- click-cards -->
+      <script>
+        const giraffeCards = document.querySelectorAll(".animal-card");
+        const monkeyCard = document.querySelector(".animal-card-monkey");
+        const tigerCard = document.querySelector(".animal-card-tiger");
+        const elephantCard = document.querySelector(".animal-card-elephant");
+        const rhinoCard = document.querySelector(".animal-card-rhino");
+        const deerCard = document.querySelector(".animal-card-deer");
+
+        let currentActiveCard = null;
+
+        // Function to toggle the active state of a card
+        function toggleActive(card) {
+          card.classList.toggle("active");
+        }
+
+        // Click event listener for Giraffe cards
+        giraffeCards.forEach((card) => {
+          card.addEventListener("click", () => {
+            if (currentActiveCard !== card) {
+              if (currentActiveCard) {
+                toggleActive(currentActiveCard);
+              }
+              toggleActive(card);
+              currentActiveCard = card;
+            }
+          });
+        });
+
+        // Click event listener for Monkey card
+        monkeyCard.addEventListener("click", () => {
+          if (currentActiveCard !== monkeyCard) {
+            if (currentActiveCard) {
+              toggleActive(currentActiveCard);
+            }
+            toggleActive(monkeyCard);
+            currentActiveCard = monkeyCard;
+          }
+        });
+
+        // Click event listener for Tiger card
+        tigerCard.addEventListener("click", () => {
+          if (currentActiveCard !== tigerCard) {
+            if (currentActiveCard) {
+              toggleActive(currentActiveCard);
+            }
+            toggleActive(tigerCard);
+            currentActiveCard = tigerCard;
+          }
+        });
+
+        // Click event listener for Elephant card
+        elephantCard.addEventListener("click", () => {
+          if (currentActiveCard !== elephantCard) {
+            if (currentActiveCard) {
+              toggleActive(currentActiveCard);
+            }
+            toggleActive(elephantCard);
+            currentActiveCard = elephantCard;
+          }
+        });
+        rhinoCard.addEventListener("click", () => {
+          if (currentActiveCard !== rhinoCard) {
+            if (currentActiveCard) {
+              toggleActive(currentActiveCard);
+            }
+            toggleActive(rhinoCard);
+            currentActiveCard = rhinoCard;
+          }
+        });
+        deerCard.addEventListener("click", () => {
+          if (currentActiveCard !== deerCard) {
+            if (currentActiveCard) {
+              toggleActive(currentActiveCard);
+            }
+            toggleActive(deerCard);
+            currentActiveCard = deerCard;
+          }
+        });
+      </script>
+
+      <!-- switching names in vid-box -->
+      <script>
+        const giraffeCard = document.querySelector(".animal-card");
+        const monkeycard = document.querySelector(".animal-card-monkey");
+        const tigercard = document.querySelector(".animal-card-tiger");
+        const elephantcard = document.querySelector(".animal-card-elephant");
+        const rhinocard = document.querySelector(".animal-card-rhino");
+        const deercard = document.querySelector(".animal-card-deer");
+        const videoStatus = document.getElementById("videoStatus");
+        const animalName = document.getElementById("animalName");
+
+        // Click event listener for Giraffe card
+        giraffeCard.addEventListener("click", () => {
+          updateVideoAndName("Giraffe");
+        });
+
+        // Click event listener for Monkey card
+        monkeycard.addEventListener("click", () => {
+          updateVideoAndName("Monkey");
+        });
+
+        // Click event listener for Tiger card
+        tigercard.addEventListener("click", () => {
+          updateVideoAndName("Tiger");
+        });
+
+        // Click event listener for Elephant card
+        elephantcard.addEventListener("click", () => {
+          updateVideoAndName("Elephant");
+        });
+
+        // Click event listener for Rhinoceros card
+        rhinocard.addEventListener("click", () => {
+          updateVideoAndName("Rhino");
+        });
+
+        // Click event listener for Deer card
+        deercard.addEventListener("click", () => {
+          updateVideoAndName("Deer");
+        });
+
+        // Function to update the video and name
+        // Function to update the video and name
+        // Function to update the video and name
+        // Function to update the video, name, and source
+        function updateVideoAndName(animal) {
+          const animalType = document.querySelector(".animal-type h1");
+          const videoContainer = document.querySelector(".video-container");
+          const videoSource = "videos/" + animal.toLowerCase() + ".mp4";
+
+          animalType.textContent = "Life Of " + animal;
+          videoContainer.innerHTML = `
+    <video controls autoplay>
+      <source src="${videoSource}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  `;
+
+          const video = videoContainer.querySelector("video");
+          video.style.width = "100%";
+          video.style.height = "100%";
+          video.style.position = "relative";
+          video.style.overflow = "hidden";
+        }
+        const animalTypeElement = document.querySelector(".animal-type");
+        const animalCards = document.querySelectorAll(
+          ".animal-card, .animal-card-monkey, .animal-card-tiger, .animal-card-elephant, .animal-card-rhino, .animal-card-deer"
+        );
+
+        animalCards.forEach((card) => {
+          card.addEventListener("click", () => {
+            // Update the animal-type content based on the clicked card
+            const animalName = card.querySelector("h1").textContent;
+            animalTypeElement.querySelector("h1").textContent =
+              "Life of " + animalName;
+
+            // Remove hide class from animal-type element
+            animalTypeElement.classList.remove("hide");
+
+            // Clear any existing timeout
+            clearTimeout(animalTypeElement.timer);
+
+            // Set a new timeout to hide the animal-type element after 3 seconds
+            animalTypeElement.timer = setTimeout(() => {
+              animalTypeElement.classList.add("hide");
+            }, 3000);
+          });
+        });
+      </script>
+      <div class="content-service">
+        <div class="service">
+          <h2 class="font-bold uppercase">Service</h2>
+          <h1 class="font-black capitalize">Giving Animals More Space</h1>
+          <p class="tourist">
+            Tourists can drive their own cars to see non-native wildlife living
+            in large, enclosed areas.
+          </p>
+          <span
+            >Where tourists can drive their own cars to see non-native wildlife
+            living in large, enclosed areas. These attractions allow the animals
+            more space than the small enclosures of traditional zoos.</span
+          >
+          <div class="learn-more-service">
+            <p>Want to know more?</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="koala-img"></div>
+      </div>
+      <div class="zoo-map">
+        <h2 class="font-bold uppercase">Zoo Map</h2>
+        <h1 class="font-black capitalize">Explore Zoo Map</h1>
+        <p>
+          Safari parks are areas where tourists can drive their own cars to see
+          non-native wildlife living in large, enclosed areas.
+        </p>
+      </div>
+      <div class="map-content">
+        <div class="leaf-left">
+          <img src="img/leaf-zoo-map left.png" alt="" />
+        </div>
+        <div class="explore-map-content">
+          <img class="animal-image" src="" alt="" />
+          <div class="elephant-icon-map">
+            <img src="img/elephant-icon-map.png" alt="" />
+          </div>
+
+          <div class="giraffe-icon-map">
+            <img src="img/giraffer-icon-map.png" alt="" />
+          </div>
+
+          <div class="rhino-icon-map">
+            <img src="img/rhinoceros-map-icon.png" alt="" />
+          </div>
+
+          <a href="#" class="explore-more font-black uppercase">Explore Map</a>
+
+          <div class="monkey-icon-map">
+            <img src="img/monkey-icon-map.png" alt="" />
+          </div>
+
+          <div class="tiger-icon-map">
+            <img src="img/tiger-icon-map.png" alt="" />
+          </div>
+
+          <div class="deer-icon-map">
+            <img src="img/deer-icon-map.png" alt="" />
+          </div>
+        </div>
+        <div class="leaf-right">
+          <img src="img/leaf-zoo-map right.png" alt="" />
+        </div>
+      </div>
+      <!-- map content pic animals -->
+      <script>
+        const elephantIcon = document.querySelector(".elephant-icon-map");
+        const giraffeIcon = document.querySelector(".giraffe-icon-map");
+        const rhinoIcon = document.querySelector(".rhino-icon-map");
+        const monkeyIcon = document.querySelector(".monkey-icon-map");
+        const tigerIcon = document.querySelector(".tiger-icon-map");
+        const deerIcon = document.querySelector(".deer-icon-map");
+        const animalImage = document.querySelector(".animal-image");
+
+        // Click event listener for Elephant icon
+        elephantIcon.addEventListener("click", () => {
+          animalImage.src = "img/elephant-image.jpg";
+          elephantIcon.classList.add("active");
+          giraffeIcon.classList.remove("active");
+          rhinoIcon.classList.remove("active");
+          monkeyIcon.classList.remove("active");
+          tigerIcon.classList.remove("active");
+          deerIcon.classList.remove("active");
+        });
+
+        // Click event listener for Giraffe icon
+        giraffeIcon.addEventListener("click", () => {
+          animalImage.src = "img/giraffe-image.jpg";
+
+          elephantIcon.classList.remove("active");
+          giraffeIcon.classList.add("active");
+          rhinoIcon.classList.remove("active");
+          monkeyIcon.classList.remove("active");
+          tigerIcon.classList.remove("active");
+          deerIcon.classList.remove("active");
+        });
+
+        // Click event listener for Rhino icon
+        rhinoIcon.addEventListener("click", () => {
+          animalImage.src = "img/rhino-image.jpg";
+          elephantIcon.classList.remove("active");
+          giraffeIcon.classList.remove("active");
+          rhinoIcon.classList.add("active");
+          monkeyIcon.classList.remove("active");
+          tigerIcon.classList.remove("active");
+          deerIcon.classList.remove("active");
+        });
+
+        // Click event listener for Monkey icon
+        monkeyIcon.addEventListener("click", () => {
+          animalImage.src = "img/monkey-image.jpg";
+
+          elephantIcon.classList.remove("active");
+          giraffeIcon.classList.remove("active");
+          rhinoIcon.classList.remove("active");
+          monkeyIcon.classList.add("active");
+          tigerIcon.classList.remove("active");
+          deerIcon.classList.remove("active");
+        });
+
+        // Click event listener for Tiger icon
+        tigerIcon.addEventListener("click", () => {
+          animalImage.src = "img/tiger-image.jpg";
+
+          elephantIcon.classList.remove("active");
+          giraffeIcon.classList.remove("active");
+          rhinoIcon.classList.remove("active");
+          monkeyIcon.classList.remove("active");
+          tigerIcon.classList.add("active");
+          deerIcon.classList.remove("active");
+        });
+
+        // Click event listener for Deer icon
+        deerIcon.addEventListener("click", () => {
+          animalImage.src = "img/deer-image.jpg";
+
+          elephantIcon.classList.remove("active");
+          giraffeIcon.classList.remove("active");
+          rhinoIcon.classList.remove("active");
+          monkeyIcon.classList.remove("active");
+          tigerIcon.classList.remove("active");
+          deerIcon.classList.add("active");
+        });
+      </script>
+
+      <div class="des-content">
+        <div class="content-animals-successful">
+          <h1 class="font-black capitalize">42</h1>
+
+          <div class="animal-number-des">
+            <h2 class="font-black capitalize">Animals</h2>
+            <p>
+              Game reserves are large swaths of land whose ecosystems and native
+              species are protected.
+            </p>
+          </div>
+        </div>
+        <div class="content-animals-successful">
+          <h1 class="font-black capitalize">73</h1>
+
+          <div class="animal-number-des">
+            <h2 class="font-black capitalize">Successful</h2>
+            <p>
+              The protections allow animals to live and reproduce at natural
+              rates.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="gallery">
+        <h2 class="font-bold uppercase">Gallery</h2>
+        <h1 class="font-black capitalize">Our Animals</h1>
+        <p>
+          Reserves are large swaths of land whose ecosystems and native species
+          are protected protections allow animals.
+        </p>
+      </div>
+      <div class="animal-grid">
+        <div class="giraffe-card grid-cols-2">
+          <div class="giraffe-pic"></div>
+          <div class="giraffe-des-content">
+            <div class="giraffe-card-icon">
+              <img src="img/giraffe-grid-icon.png" alt="" />
+            </div>
+            <div class="girrafe-grid">
+              <h1 class="font-black capitalize">Giraffe</h1>
+            </div>
+          </div>
+        </div>
+        <div class="monkey-card">
+          <div class="monkey-pic"></div>
+          <div class="monkey-des-content">
+            <div class="monkey-card-icon">
+              <img src="img/monkey-grid-icon.png" alt="" />
+            </div>
+            <div class="monkey-grid">
+              <h1 class="font-black capitalize">Monkey</h1>
+            </div>
+          </div>
+        </div>
+        <div class="tiger-card">
+          <div class="tiger-pic"></div>
+          <div class="tiger-des-content">
+            <div class="tiger-card-icon">
+              <img src="img/tiger-grid-icon.png" alt="" />
+            </div>
+            <div class="tiger-grid">
+              <h1 class="font-black capitalize">Tiger</h1>
+            </div>
+          </div>
+        </div>
+        <div class="elephant-card">
+          <div class="elephant-pic"></div>
+          <div class="elephant-des-content">
+            <div class="elephant-card-icon">
+              <img src="img/elephant-grid-icon.png" alt="" />
+            </div>
+            <div class="elephant-grid">
+              <h1 class="font-black capitalize">Elephant</h1>
+            </div>
+          </div>
+        </div>
+        <div class="rhino-card grid-cols-2">
+          <div class="rhino-pic"></div>
+          <div class="rhino-des-content">
+            <div class="rhino-card-icon">
+              <img src="img/rhinoceros-grid-icon.png" alt="" />
+            </div>
+            <div class="rhino-grid">
+              <h1 class="font-black capitalize">Rhinoceros</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="deer-card">
+          <div class="deer-pic"></div>
+          <div class="deer-des-content">
+            <div class="deer-card-icon">
+              <img src="img/deer-grid-icon.png" alt="" />
+            </div>
+            <div class="deer-grid">
+              <h1 class="font-black capitalize">Deer</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="learn-more-grid">
+        <p>Want to know more?</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="buy-ticket">
+        <div class="buy-ticket-content">
+          <h2 class="font-bold uppercase">Buy ticket</h2>
+          <h1 class="font-black capitalize">Go To Our Zoo</h1>
+          <p>
+            Protections allow animals to live and reproduce at natural rates.
+            Animals are allowed to roam free.
+          </p>
+        </div>
+        <div class="get-ticket">
+          <a href="#"
+            ><h1 class="ticket font-black uppercase">Get Ticket</h1></a
+          >
+          <a href="#">
+            <h1 class="contact font-black uppercase">Contact Us</h1></a
+          >
+        </div>
+      </div>
+      <div class="event-content">
+        <h2 class="font-bold uppercase">Events</h2>
+        <h1 class="font-black capitalize">Event Schedule</h1>
+        <p>
+          Swaths of land whose ecosystems and native species are protected. The
+          protections allow animals to live and reproduce.
+        </p>
+      </div>
+      <div class="event-card">
+        <div class="tempor-card-content">
+          <div class="tempor-pic-content"></div>
+          <div class="tempor-content">
+            <div class="tempor-name-des">
+              <h1 class="font-black uppercase">Keeper Talks</h1>
+              <p>
+                Zookeepers conduct educational talks at specific animal
+                exhibits, discussing topics like animal behavior, conservation,
+                and protecting the animals.
+              </p>
+            </div>
+            <div class="tempor-date">
+              <h1 class="font-black uppercase">25</h1>
+              <h2>April</h2>
+            </div>
+          </div>
+        </div>
+        <div class="dolore-card-content">
+          <div class="dolore-pic-content"></div>
+          <div class="dolore-content">
+            <div class="dolore-name-des">
+              <h1 class="font-black uppercase">Conservation Awareness</h1>
+              <p>
+                The protections allow animals to live and reproduce at natural
+                rates. Animals are allowed to roam free.
+              </p>
+            </div>
+            <div class="dolore-date">
+              <h1 class="font-black uppercase">01</h1>
+              <h2>May</h2>
+            </div>
+          </div>
+        </div>
+        <div class="nostrud-card-content">
+          <div class="nostrud-pic-content"></div>
+          <div class="dolore-content">
+            <div class="nostrud-name-des">
+              <h1 class="font-black uppercase">Animal Feedings</h1>
+              <p>
+                Visitors can try feeding animals with the guidance of the zoo
+                keeper while sharing information about their habits and
+                behaviours.
+              </p>
+            </div>
+            <div class="nostrud-date">
+              <h1 class="font-black uppercase">12</h1>
+              <h2>May</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="learn-more-event">
+        <p>Want to know more?</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="Testimonials">
+        <h2 class="font-bold uppercase">Testimonials</h2>
+        <h1 class="font-black capitalize">What People Say</h1>
+        <p>
+          Land whose ecosystems and native species are protected. The
+          protections allow animals to live and reproduce.
+        </p>
+      </div>
+      <div class="testimonials-container">
+        <div class="card-bardhan">
+          <div class="bardhan-icon"></div>
+          <div class="testimonial-star">
+            <img src="img/testimonial-star.png" alt="" />
+          </div>
+          <p>
+            Petting zoos feature domesticated animals that are gentle enough for
+            children to pet and feed. Sheep, goats, donkeys.
+          </p>
+          <h1 class="font-black">Gabriel Kuan</h1>
+        </div>
+        <div class="card-pansu">
+          <div class="pansu-icon"></div>
+          <div class="testimonial-star">
+            <img src="img/testimonial-star.png" alt="" />
+          </div>
+          <p>
+            Domesticated animals that are gentle enough for children to pet and
+            feed. Sheep, goats, donkeys, and rabbits.
+          </p>
+          <h1 class="font-black">Philip Jay Pagaduan</h1>
+        </div>
+        <div class="card-farzin">
+          <div class="farzin-icon"></div>
+          <div class="testimonial-star">
+            <img src="img/testimonial-star.png" alt="" />
+          </div>
+          <p>
+            Gentle enough for children to pet and feed. Sheep, goats, donkeys,
+            and rabbits are common petting zoo animals.
+          </p>
+          <h1 class="font-black">John Clarence Masaga</h1>
+        </div>
+      </div>
+      <div class="learn-more-testimonial">
+        <p>Want to know more?</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="pricing-content">
+        <div class="standar-ticket-bg">
+          <div class="pricing-leaf-left">
+            <img src="img/pricing-leaf-left.png" alt="" />
+          </div>
+          <div class="standard-ticket-content">
+            <h1 class="font-black">$99</h1>
+            <h2 class="font-black">Standart Ticket</h2>
+            <ul>
+              <li>Petting zoos feature domesticated animals</li>
+              <li>Gentle enough for children to pet</li>
+              <li>Sheep, goats, donkeys</li>
+            </ul>
+            <a href="#"
+              ><h3 class="ticket-buy-now font-black uppercase">Buy Now</h3></a
+            >
+          </div>
+          <div class="pricing-leaf-right">
+            <img src="img/pricing-leaf-right.png" alt="" />
+          </div>
+        </div>
+        <div class="pricing">
+          <h2 class="font-bold uppercase">Pricing</h2>
+          <h1 class="font-black capitalize">Buy Ticket Right Now</h1>
+          <p>
+            Some zoos are dedicated entirely to certain species. Aquariums are
+            types of zoos that exclusively house aquatic animals. The Sydney
+            Aquarium in Australia has exhibits of all of Australia’s major
+            water.
+          </p>
+          <div class="learn-more-pricing">
+            <p>Want to know more?</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="donate-content">
+        <div class="donate-bg">
+          <div class="donate-leaf-left">
+            <img src="img/donate-leaf-left.png" alt="" />
+          </div>
+          <div class="donate-now-content">
+            <h1 class="font-black">49 <sup>%</sup></h1>
+            <h2 class="font-black">$2400 <sub>/ $5000</sub></h2>
+
+            <a href="#"
+              ><h3 class="donate-buy-now font-black uppercase">Buy Now</h3></a
+            >
+          </div>
+          <div class="donate-leaf-right">
+            <img src="img/donate-leaf-right.png" alt="" />
+          </div>
+        </div>
+        <div class="donate">
+          <h2 class="font-bold uppercase">Donate</h2>
+          <h1 class="font-black capitalize">Donate And Help</h1>
+          <p>
+            Aquariums are types of zoos that exclusively house aquatic animals.
+            The Sydney Aquarium in Australia has exhibits of all of Australia’s
+            major water systems and is home to more than 650 native Australian
+            species.
+          </p>
+          <div class="learn-more-pricing">
+            <p>Want to know more?</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq">
+        <h2 class="font-bold uppercase">Questions?</h2>
+        <h1 class="font-black capitalize">Frequently Asked Questions</h1>
+        <p>
+          Zoos are dedicated entirely to certain species. Aquariums are types of
+          zoos that exclusively house aquatic animals.
+        </p>
+      </div>
+
+      <div class="faq-content">
+        <div class="q1">
+          <h1 class="font-black">Why is zoo important?</h1>
+
+          <img class="arrow" src="img/arrow-down.png" alt="" />
+        </div>
+        <p class="answer">
+          Some zoos are dedicated entirely to certain species. Aquariums are
+          types of zoos that exclusively house aquatic animals. The Sydney
+          Aquarium in Australia has exhibits of all of Australia’s major water
+          systems and is home to more than 650 native Australian species.
+        </p>
+        <div class="q2">
+          <h1 class="font-black">What is the meaning of zoo?</h1>
+
+          <img class="arrow2" src="img/arrow-down.png" alt="" />
+        </div>
+        <p class="answer2">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+          voluptatum quidem quo est, itaque asperiores tempore praesentium!
+          Illo, modi deserunt.
+        </p>
+
+        <div class="q3">
+          <h1 class="font-black">What do you seen at the zoo?</h1>
+
+          <img class="arrow3" src="img/arrow-down.png" alt="" />
+        </div>
+        <p class="answer3">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime,
+          debitis! In recusandae sed dolores ullam assumenda! A libero est eos.
+        </p>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var arrow = document.querySelector(".arrow");
+          var answer = document.querySelector(".answer");
+
+          arrow.addEventListener("click", function () {
+            var faq = arrow.parentNode.parentNode;
+            faq.classList.toggle("open");
+            arrow.classList.toggle("rotate");
+          });
+        });
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var arrow = document.querySelector(".arrow2");
+          var answer = document.querySelector(".answer2");
+
+          arrow.addEventListener("click", function () {
+            var faq = arrow.parentNode.parentNode;
+            faq.classList.toggle("open2");
+            arrow.classList.toggle("rotate2");
+          });
+        });
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var arrow = document.querySelector(".arrow3");
+          var answer = document.querySelector(".answer3");
+
+          arrow.addEventListener("click", function () {
+            var faq = arrow.parentNode.parentNode;
+            faq.classList.toggle("open3");
+            arrow.classList.toggle("rotate3");
+          });
+        });
+      </script>
+      <div class="instagram">
+        <div class="instagram-content">
+          <h1 class="font-black capitalize">Our Instagram</h1>
+          <p>
+            Aquarium in Australia has exhibits of all of Australia’s major water
+            systems and is home
+          </p>
+          <div class="learn-more-instagram">
+            <p>Want to know more?</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <div class="instagram-grid">
+          <div class="instagram-grid1"></div>
+          <div class="instagram-grid2"></div>
+          <div class="instagram-grid3"></div>
+          <div class="instagram-grid4"></div>
+        </div>
+      </div>
+      <div class="blogs-news">
+        <h2 class="font-bold uppercase">Blog & News</h2>
+        <h1 class="font-black capitalize">Latest Blog</h1>
+        <p>
+          Researchers at zoos can study animals up-close. They can observe
+          behavior such as mating and nutrition choices.
+        </p>
+      </div>
+      <div class="blog-card">
+        <div class="blog-card1">
+          <div class="card1-pic">
+            <div class="card1-content">
+              <h1 class="font-black">26</h1>
+              <h2>Apr</h2>
+            </div>
+          </div>
+          <div class="blog-card1-content">
+            <h1 class="font-black">These open-range zoos give animals</h1>
+            <p>
+              They can observe behavior such as mating and nutrition choices.
+            </p>
+          </div>
+        </div>
+        <div class="blog-card2">
+          <div class="card2-pic"></div>
+          <div class="blog-card2-content">
+            <h2>24 Apr, 2021</h2>
+            <h1 class="font-black">More territory to roam and provide</h1>
+            <p>Behavior such as mating and nutrition choices.</p>
+          </div>
+        </div>
+
+        <div class="blog-card3">
+          <div class="card3-pic"></div>
+          <div class="blog-card3-content">
+            <h2>21 Apr, 2021</h2>
+            <h1 class="font-black">Popular technique of building</h1>
+            <p>
+              Veterinarians are also available to treat sick or injured animals.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="learn-more-blog">
+        <p>Want to know more?</p>
+        <a href="#">Learn More</a>
+      </div>
+      <div class="last-section">
+        <div class="go-to-our-zoo">
+          <h2 class="font-bold uppercase">Go to our zoo</h2>
+          <h1 class="font-black capitalize">Buy Ticket Now</h1>
+          <p>
+            Behavior such as mating and nutrition choices. Biologists and
+            veterinarians are also available to treat sick or injured animals.
+          </p>
+          <div class="last-button">
+            <a href="#" class="last-button1 font-black uppercase">Get Ticket</a>
+            <a href="#" class="last-button2 font-black uppercase">Contact Us</a>
+          </div>
+        </div>
+        <div class="location">
+          <i class="fa-solid fa-location-dot" style="color: #348183"></i>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var scrollAnimation = document.querySelector(".scroll-animation");
+          var isInViewport = false;
+          var hasVisitedSection = false;
+
+          function debounce(func, delay) {
+            let timeoutId;
+            return function () {
+              clearTimeout(timeoutId);
+              timeoutId = setTimeout(func, delay);
+            };
+          }
+
+          function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+              rect.top >= 0 &&
+              rect.left >= 0 &&
+              rect.bottom <=
+                (window.innerHeight || document.documentElement.clientHeight) &&
+              rect.right <=
+                (window.innerWidth || document.documentElement.clientWidth)
+            );
+          }
+
+          function checkScroll() {
+            var isCurrentlyInViewport = isElementInViewport(scrollAnimation);
+
+            if (isCurrentlyInViewport && !isInViewport) {
+              // Entering the section
+              if (!hasVisitedSection) {
+                scrollAnimation.classList.add("show");
+              }
+              isInViewport = true;
+            } else if (!isCurrentlyInViewport && isInViewport) {
+              // Leaving the section
+              if (!hasVisitedSection) {
+                scrollAnimation.classList.remove("show");
+              }
+              isInViewport = false;
+            } else if (isCurrentlyInViewport && !hasVisitedSection) {
+              // Visited the section for the first time
+              hasVisitedSection = true;
+            }
+          }
+
+          var debouncedCheckScroll = debounce(checkScroll, 100); // Adjust the delay as needed
+
+          window.addEventListener("scroll", debouncedCheckScroll);
+        });
+      </script>
+    </main>
+
+    <footer class="zoo-footer">
+      <a href="#" class="footer-title font-black uppercase">zoo</a>
+      <div class="footer-menu">
+        <h2 class="font-bold uppercase">menu</h2>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Ticket</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-animal">
+        <h2 class="font-bold uppercase">animal</h2>
+        <ul>
+          <li><a href="#">Giraffe</a></li>
+          <li><a href="#">Monkey</a></li>
+          <li><a href="#">Tiger</a></li>
+          <li><a href="#">See All</a></li>
+        </ul>
+      </div>
+      <div class="footer-icons">
+        <ul>
+          <a href="#"
+            ><i class="fa-brands fa-facebook-f" style="color: #ffffff"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-brands fa-twitter" style="color: #ffffff"></i
+          ></a>
+          <a href="#"
+            ><i class="fa-brands fa-instagram" style="color: #fcfcfc"></i
+          ></a>
+        </ul>
+      </div>
+    </footer>
+    <div class="copy-wrapper">
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Laaqiq. All Rights Reserved.</p>
+      </div>
+      <div class="terms-policy">
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </body>
+</html>
