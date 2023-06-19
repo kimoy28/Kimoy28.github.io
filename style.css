@@ -1442,7 +1442,7 @@ body {
 }
 .ticket {
   display: flex;
-
+border: 1px solid white;
   padding-top: 14px;
   padding-bottom: 11px;
   padding-left: 35.5px;
