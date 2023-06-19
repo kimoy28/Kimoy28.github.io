@@ -4866,12 +4866,5 @@ body {
     margin-top: 0px;
     gap: 83px;
   }
-  .scroll-animation {
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-
-  .scroll-animation.show {
-    opacity: 1;
-  }
+ 
 }
